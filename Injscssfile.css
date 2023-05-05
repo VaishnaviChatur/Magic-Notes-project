@@ -1,0 +1,80 @@
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    section {
+        display: flex;
+        flex-flow: row;
+        height: 50vh;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    section div {
+        height: 300px;
+        background: plum;
+        color: white;
+        padding: 30px;
+        border-radius: 14px;
+        min-width: 400px;
+        width: 20rem;
+        box-shadow: 12px 8px 32px -12px black;
+        margin-left: -60px;
+        margin-right: 60px;
+        cursor: pointer;
+        transition: alt 0.100s ease-in-out;
+    }
+    
+    section div:hover {
+        transform: translateY(-16px) rotate(4deg);
+    }
+    
+    section div:hover~div {
+        transform: translateX(130px);
+    }
+    
+    button {
+        color: purple;
+    }
+    /* aside {
+            float: right;
+            margin-top: 10px;
+        } */
+    /* h1 {
+            font-size: 1200px;
+        } */
+    
+    .content {
+        position: relative;
+    }
+    
+    #sidebar {
+        width: 500px;
+        height: 100vh;
+        margin-right: 0px;
+        position: fixed;
+        top: 0px;
+        right: 10px;
+        padding: 0;
+        text-align: left;
+        color: white;
+        border: 1px solid purple;
+        background-color: rgb(75, 36, 75);
+    }
+    
+    #sidebarr {
+        overflow: scroll;
+        position: relative;
+        height: 79vh;
+    }
+    
+    #sidebarcontents {
+        padding: 5px 0px 5px 0px;
+    }
+    
+    #page-wrap {
+        position: relative;
+        width: 600px;
+        margin: 15px auto;
+    }
